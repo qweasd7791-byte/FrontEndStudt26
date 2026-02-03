@@ -1,0 +1,73 @@
+ <meta charset="UTF-8">
+
+<img src="이미지경로" alt="이미지설명">
+ <!-- scr 속성: 이미지 파일의 경로를 지정한다. (주소 역할) -->
+<!-- alt 속성: 이미지를 볼 수 없을 때 대신 보여줄 텍스트 -->
+
+
+ <!-- 기본 이미지 삽입하기 -->
+ <!DOCTYPE html>
+<html lang="ko">
+<head>
+ <meta charset="UTF-8">
+ <title>김개발의 자기소개</title>
+</head>
+<body>
+ <h1>안녕하세요! 김개발입니다</h1>
+
+ <!-- 프로필 이미지 -->
+ <img src="images/profile.jpg" alt="김개발의 프로필 사진">
+
+ <p>저는 정보통신공학과 2학년 학생입니다.</p>
+</body>
+</html>
+
+
+
+<!-- 이미지 크기 조절하기 -->
+
+ <!-- 너비만 지정 (비율 유지) -->
+<img src="images/profile.jpg" alt="김개발의 프로필 사진" width="200">
+
+<!-- 너비와 높이 모두 지정 -->
+<img src="images/hobby-coding.jpg" alt="코딩하는 모습" width="300" height="200">
+<!-- 보통 width만 조절하면 높이는 자동으로 조절됨 -->
+
+
+
+
+ <!-- 다양한 이미지 경로 사용하기 -->
+
+ <!-- 같은 폴더의 이미지 -->
+<img src="logo.png" alt="회사 로고">
+
+<!-- 하위 폴더의 이미지 -->
+<img src="igemas/gallery/photo1.jpg" alt="갤러리 사진 1">
+
+<!-- 인터넷 이미지 (절대 경로) -->
+<img src="https://example.com/image.jpg" alt="외부 이미지">
+
+
+
+<!-- 완성된 예제 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ <meta charset="UTF-8">
+ <title>김개발의 자기소개</title>
+</head>
+<body>
+ <h1>안녕하세요! 김개발입니다</h1>
+
+ <img src="images/profile.jpg" alt="김개발의 프로필 사진" width="200">
+
+ <h2>제 취미는 이런 것들이에요</h2>
+ <p>코딩하는 것을 정말 좋아해요!</p>
+ <img src="images/coding.jpg" alt="코딩하는 모습" width="300">
+
+ <p>게임도 즐겨해요.</p>
+ <img src="images/gaming.jpg" alt="게임하는 모습" width="300">
+</body>
+</html>
+
+

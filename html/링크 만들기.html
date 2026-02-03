@@ -1,0 +1,78 @@
+<a href="이동할 주소">클릭할 텍스트</a>
+<!-- <a> 태그는 링크를 만들 때 사용 -->
+<!-- href는 어디로 이동할건지를 지정함 -->
+
+
+
+<!-- 외부 링크 만들기(다른 웹사이트) -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ <meta charset="UTF-8">
+ <title>링크 실습</title>
+</head>
+<body>
+ <h1>우리 회사 소개</h1>
+ <p>더 많은 정보를 원하시면 <a href="https://www.google.com">구글</a>에서 검색해보세요.</p>
+
+ <h2>유용한 사이트들</h2>
+ <ul>
+ <li><a href="https://www.naver.com">네이버</a></li>
+ <li><a href="https://www.daum.net">다음</a></li>
+ <li><a href="https://www.youtube.com">유튜브</a></li>
+ </ul>
+</body>
+</html>
+
+
+
+<!-- 내부 링크 만들기(같은 사이트 내 다른 페이지) -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ <meta charset="UTF-8">
+ <title>회사 메인 페이지</title>
+</head>
+<body>
+ <nav> <!-- 이동 메뉴 묶음(링크가 여러개일때 사용) -->
+ <ul>
+ <li><a href="my-first-weppage.html">홈</a></li>
+ <li><a href="my-second-webpage.html">회사소개</a></li>
+ <li><a href="my-thd-webpage.html">제품소개</a></li>
+ <li><a href="my-four-webpage.html">연락처</a></li>
+ </ul>
+ </nav>
+
+ <h1>메인 페이지에 오신 것을 환영합니다</h1>
+ <p><a href="목록%20만들기.html">회사 소개</a>를 먼저 읽어보시기 바랍니다.</p>
+</body>
+</html>
+
+
+<!-- 앵커 링크(같은 페이지 내 특정 위치) -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ <meta charset="UTF-8">
+ <title>긴 문서 예제</title>
+</head>
+<body>
+ <h1>목차</h1>
+ <ul>
+ <li><a href="#intro">소개</a></li>
+ <li><a href="#features">특징</a></li>
+ <li><a href="#contact">연락처</a></li>
+ </ul>
+
+ <h2 id="intro">소개</h2>
+ <p>여기는 소개 섹션입니다...</p>
+
+ <h2 id="features">특징</h2>
+ <p>여기는 특징 섹션입니다...</p>
+
+ <h2 id="contact">연락처</h2>
+ <p>여기는 연락처 섹션입니다...</p>
+
+ <p><a href="#top">맨 위로 이동</a></p>
+</body>
+</html>

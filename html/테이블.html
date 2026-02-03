@@ -1,0 +1,88 @@
+<!--<table>: 전체 테이블을 감싸는 컨테이너 (집의 골조 같은 역할)-->
+<!--<thead>: 테이블 머리글 영역 (제목 행들을 묶어줌)-->
+<!--<tbody>: 테이블 본문 영역 (실제 데이터들이 들어가는 곳)-->
+<!--<tr> (table row): 테이블의 한 행을 나타냄-->
+<!--<th> (table header): 제목 셀 (굵게 표시되고 가운데 정렬)-->
+<!--<td> (table data): 일반 데이터 셀-->
+
+<!-- 기본 테이블 만들기 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>프로젝트 현황표</title>
+</head>
+<body>
+ <h1>팀 프로젝트 현황</h1>
+
+ <table> <!-- 전체 테이블을 감싸는 컨테이너 -->
+ <thead> <!-- 테이블 머릿글 영역(제목 행들을 묶어줌) -->
+ <tr>    <!-- 테이블의 한 행을 나타냄 -->
+ <th>프로젝트명</th> <!-- 제목 셀(굵게 표시, 가운대 정렬) -->
+ <th>담당자</th>
+ <th>진행률</th>
+ <th>마감일</th>
+ </tr>
+ </thead>
+ <tbody> <!-- 테이블 본문 영역(실제 데이터들이 들어감) -->
+ <tr>
+ <td>쇼핑몰 웹사이트</td> <!-- 일반 데이터 셀 -->
+ <td>김개발</td>
+ <td>75%</td>
+ <td>2024-03-15</td>
+ </tr>
+ <tr>
+ <td>모바일 앱 UI</td>
+ <td>이디자인</td>
+ <td>90%</td>
+ <td>2024-03-10</td>
+ </tr>
+ <tr>
+ <td>데이터베이스 설계</td>
+ <td>박멘토</td>
+ <td>60%</td>
+ <td>2024-03-20</td>
+ </tr>
+ </tbody>
+ </table>
+</body>
+</html>
+
+
+
+
+
+<!-- 테이블 스타일링하기 -->
+<head>
+ <style>                        /* CSS에서 세미콜론은 문장 끝 표시 */
+ table {
+ border-collapse: collapse;    /* 경계선을 하나로 합침 */
+ /* 표 칸 사이 한 줄 */
+ width: 100%;                  /* ;은 문장의 마침표 역할(문장이 끝났음을 알려줌) */
+ /* 표가 화면 가로를 깍 채움 */
+ margin: 20px 0;
+ /* 위 아래로 여백 20px */
+ }
+
+ th, td {
+ border: 1px solid #ddd;   /* 각 칸에 연한 회색 테두리 */
+ padding: 12px;            /* 글자랑 테두리 사이 여백 12px */
+ text-align: left;         /* 글자 왼쪽 정렬 */
+ }
+
+ th {                           /* 표의 제목 칸 */
+ background-color: #4CAF50;     /* 초록 배경 */
+ color: white;                  /* 흰 글씨 */
+ font-weight: bold;             /* 글씨 굵게 */
+ }
+
+ tr:nth-child(even) {           /* even: 짝수줄 */
+ background-color: #f2f2f2;     /* 짝수 행에 배경색 회색 */
+ }
+
+ tr:hover {                      /* 마우스를 행 위에 올리면 */
+ background-color: #ddd;        /* 그 줄이 회색으로 강조됨 */
+ }
+ </style>
+</head>
