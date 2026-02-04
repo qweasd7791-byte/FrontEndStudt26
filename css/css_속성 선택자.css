@@ -1,0 +1,91 @@
+
+/* required 속성을 가진 모든 요소 */
+[required] {
+ border: 2px solid red;
+}
+
+/* disabled 속성을 가진 모든 요소 */
+[disabled] {
+ background-color: #f0f0f0;
+ cursor: not-allowed;
+}
+
+
+
+/* type이 "email"인 input 요소 */
+[type="email"] {
+ background-image: url('email-icon.png');
+}
+
+/* class가 정확히 "button"인 요소 */
+[class="button"] {
+ padding: 10px 20px;
+}
+
+
+
+/* 기존 스타일에 추가 */
+
+/* placeholder 속성을 가진 요소 */
+[placeholder] {
+ font-style: italic;
+}
+
+/* name 속성이 "user"로 시작하는 요소 */
+[name^="user"] {
+ border-left: 4px solid #4ecdc4;
+}
+
+/* name 속성이 "info"로 끝나는 요소 */
+[name$="info"] {
+ border-right: 4px solid #45b7d1;
+}
+
+/* class 속성에 "important"가 포함된 요소 */
+[class*="important"] {
+ animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+ 0% { transform: scale(1); }
+ 50% { transform: scale(1.05); }
+ 100% { transform: scale(1); }
+}
+
+
+/* 파일 업로드 input 스타일링 */
+[type="file"] {
+ padding: 20px;
+ border: 2px dashed #ccc;
+ background-color: #fafafa;
+ text-align: center;
+ cursor: pointer;
+}
+
+[type="file"]:hover {
+ border-color: #007bff;
+ background-color: #f0f8ff;
+}
+
+/* 체크박스와 라디오 버튼 */
+[type="checkbox"], [type="radio"] {
+ width: auto;
+ margin-right: 8px;
+}
+
+/* readonly 속성을 가진 input */
+[readonly] {
+ background-color: #e9ecef;
+ cursor: not-allowed;
+}
+
+/* 특정 패턴을 가진 ID 선택 */
+[id^="btn-"] {
+ background-color: #007bff;
+ color: white;
+ border: none;
+ padding: 10px 15px;
+ border-radius: 4px;
+ cursor: pointer;
+}
+
